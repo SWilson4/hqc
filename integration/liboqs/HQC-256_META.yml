@@ -27,3 +27,12 @@ implementations:
       version: hqc-submission_2025-02-19
     - name: Optimized_Implementation
       version: hqc-submission_2025-02-19
+      supported_platforms:
+          - architecture: x86_64
+            operating_systems:
+                - Linux
+                - Darwin
+            required_flags:
+                - avx2
+                - bmi1
+                - pclmulqdq
