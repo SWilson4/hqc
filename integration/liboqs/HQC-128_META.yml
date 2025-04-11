@@ -6,6 +6,7 @@ length-ciphertext: 4497
 length-public-key: 2249
 length-secret-key: 2305
 length-shared-secret: 64
+nistkat-sha256: 06fbc55208ce35ca18df09ca46351a4cea859d71c8c776848b3ca5870d3f8b31
 principal-submitters:
   - Carlos Aguilar Melchor
   - Nicolas Aragon
