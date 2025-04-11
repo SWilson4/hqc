@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 wget https://pqc-hqc.org/doc/hqc-submission_2025-02-19.zip
-unzip hqc-submission_2025-02-19.zip -x Hardware_Implementation/* README Supporting_Documentation/*
+unzip hqc-submission_2025-02-19.zip -x Hardware_Implementation/* **README Supporting_Documentation/*
 rm hqc-submission_2025-02-19.zip
 
 # rename all .cpp files to .c
@@ -19,3 +19,14 @@ do
 done
 
 rm -r Additional_Implementation
+
+# restructure by scheme instead of by implementation
+for subdir in *_Implementation/*
+do
+	scheme=${subdir#*/}
+	impl=${subdir%/*}
+	mkdir -p "$scheme"
+	mv "$impl/$scheme" "$scheme/$impl"
+done
+
+rmdir *_Implementation
