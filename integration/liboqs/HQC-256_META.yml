@@ -1,0 +1,28 @@
+name: HQC-256
+type: kem
+claimed-nist-level: 5
+claimed-security: IND-CCA2
+length-ciphertext: 14485
+length-public-key: 7245
+length-secret-key: 7317
+length-shared-secret: 64
+principal-submitters:
+  - Carlos Aguilar Melchor
+  - Nicolas Aragon
+  - Slim Bettaieb
+  - Loïc Bidoux
+  - Olivier Blazy
+  - Jurjen Bos
+  - Jean-Christophe Deneuville
+  - Arnaud Dion
+  - Philippe Gaborit
+  - Jérôme Lacan
+  - Edoardo Persichetti
+  - Jean-Marc Robert
+  - Pascal Véron
+  - Gilles Zémor
+implementations:
+    - name: Reference_Implementation
+      version: hqc-submission_2025-02-19
+    - name: Optimized_Implementation
+      version: hqc-submission_2025-02-19
